@@ -12,31 +12,30 @@
 <form action="/customers" method="post">
 <fieldset>
     <legend>Customer Information</legend>
-    <c:forEach var="c" items="${requestScope.customers}">
-    <input type="hidden" name="id" value="<c:out value="${c.id}"/>">
+    <input type="hidden" name="id" value="<c:out value="${customers.getId}"/>">
     <table>
         <tr>
             <td>Id</td>
             <td>
-                <c:out value="${c.id}"/>
+                <c:out value="${customers.getId}"/>
             </td>
         </tr>
         <tr>
             <td>Name</td>
             <td>
-                <input type="text" name="name" value=" <c:out value="${c.name}"/>">
+                <input type="text" name="name" value=" <c:out value="${customers.getName}"/>">
             </td>
         </tr>
         <tr>
             <td>Email</td>
             <td>
-                <input type="text" name="email" value=" <c:out value="${c.email}"/>">
+                <input type="text" name="email" value=" <c:out value="${customers.getEmail}"/>">
             </td>
         </tr>
         <tr>
             <td>Address</td>
             <td>
-                <input type="text" name="address" value=" <c:out value="${c.address}"/>">
+                <input type="text" name="address" value=" <c:out value="${customers.getAddress}"/>">
             </td>
         </tr>
         <tr>
@@ -45,7 +44,6 @@
             </td>
         </tr>
     </table>
-    </c:forEach>
 </fieldset>
 </form>
 <a href="/customers">Back to list</a>.
