@@ -2,6 +2,7 @@ package com.codegym.service;
 
 import com.codegym.model.Customer;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -43,5 +44,16 @@ public class CustomerService implements ICustomerService{
     @Override
     public void remove(int id) {
         customers.remove(id);
+    }
+
+    @Override
+    public List<Customer> searchByName(String name) {
+        List<Customer> searchList = new ArrayList<>();
+        for (Customer customer : findAll()) {
+            if (customer.getName().toUpperCase().contains(name.toUpperCase())) {
+                searchList.add(customer);
+            }
+        }
+        return  searchList;
     }
 }
