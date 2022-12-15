@@ -25,6 +25,11 @@
             <label>Address</label>
             <input type="text" th:field="*{address}">
         </div>
+        <div>
+            <select name="departmentSelect">
+                <option th:each="row : ${departments}" th:text="${row.getName()}" th:value="${row.getId()}"></option>
+            </select>
+        </div>
         <input type="submit" value="Save">
     </form>
 </div>

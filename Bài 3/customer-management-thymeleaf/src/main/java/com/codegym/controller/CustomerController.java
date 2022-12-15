@@ -1,6 +1,7 @@
 package com.codegym.controller;
 
 import com.codegym.model.Customer;
+import com.codegym.model.Department;
 import com.codegym.service.CustomerService;
 import com.codegym.service.ICustomerService;
 import org.springframework.stereotype.Controller;
@@ -25,13 +26,16 @@ public class CustomerController {
 
     @GetMapping("/create")
     public String create(Model model){
+        List<Department> departmentList = customerService.findAllDepartment();
+        model.addAttribute("departments",departmentList);
         model.addAttribute("customer", new Customer());
         return "create";
     }
 
     @PostMapping("/save")
-    public String save(Customer customer, RedirectAttributes attributes){
+    public String save(Customer customer,@RequestParam("departmentSelect") int id, RedirectAttributes attributes){
         customer.setId((int) (Math.random() * 10000));
+        customer.setDepartment(customerService.findByIdDepartment(id));
         customerService.save(customer);
         attributes.addFlashAttribute("success", "Add customer successfully");
         return "redirect:/customer";
@@ -44,8 +48,9 @@ public class CustomerController {
     }
 
     @PostMapping("/update")
-    public String update(Customer customer,RedirectAttributes attributes) {
+    public String update(Customer customer,@RequestParam("departmentSelect") int id, RedirectAttributes attributes) {
         customerService.update(customer.getId(), customer);
+        customer.setDepartment(customerService.findByIdDepartment(id));
         attributes.addFlashAttribute("success", "Edit customer successfully");
         return "redirect:/customer";
     }
