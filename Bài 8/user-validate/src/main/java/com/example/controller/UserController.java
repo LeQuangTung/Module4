@@ -25,20 +25,15 @@ public class UserController {
         modelAndView.addObject("user", new User());
         return modelAndView;
     }
-    @PostMapping("/create-user")
-    public ModelAndView saveCustomer(@ModelAttribute("user") User customer) {
-        userService.save(customer);
-        ModelAndView modelAndView = new ModelAndView("/index");
-        modelAndView.addObject("user", new User());
-        modelAndView.addObject("message", "New user created successfully");
-        return modelAndView;
-    }
 
     @PostMapping("/validateUser")
     public ModelAndView checkValidate (@Validated @ModelAttribute("user") User user, BindingResult bindingResult){
         if (bindingResult.hasFieldErrors()){
             return new ModelAndView("/index");
         }
+        userService.save(user);
+        ModelAndView modelAndView =new ModelAndView("/index");
+        modelAndView.addObject("message", "New user created successfully");
         return new ModelAndView("/result");
     }
 
