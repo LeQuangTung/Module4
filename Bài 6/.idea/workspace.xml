@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a1c9e04f-a9ec-4d43-a5c0-13c9872c7e04" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Bài 7/cms/src/main/java/com/codegym/cms/logger/Logger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Bài 9/customer_manager/src/main/java/com/example/customer_manager/config/ApplicationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Bài 9/customer_manager/src/main/java/com/example/customer_manager/config/ApplicationInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Bài 9/customer_manager/src/main/java/com/example/customer_manager/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Bài 9/customer_manager/src/main/java/com/example/customer_manager/model/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Bài 9/customer_manager/src/main/java/com/example/customer_manager/repository/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Bài 9/customer_manager/src/main/java/com/example/customer_manager/repository/ICustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Bài 9/customer_manager/src/main/java/com/example/customer_manager/repository/IRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Bài 9/customer_manager/src/main/java/com/example/customer_manager/service/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Bài 9/customer_manager/src/main/java/com/example/customer_manager/service/DuplicateEmailException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Bài 9/customer_manager/src/main/java/com/example/customer_manager/service/ICustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Bài 9/customer_manager/src/main/java/com/example/customer_manager/service/IService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Bài 9/customer_manager/src/main/webapp/WEB-INF/views/create.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Bài 9/customer_manager/src/main/webapp/WEB-INF/views/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Bài 9/customer_manager/src/main/webapp/WEB-INF/views/error.404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Bài 9/customer_manager/src/main/webapp/WEB-INF/views/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Bài 9/customer_manager/src/main/webapp/WEB-INF/views/input-not-acceptable.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bài 7/cms/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../Bài 7/cms/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bài 7/cms/src/main/java/com/codegym/cms/config/ApplicationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Bài 7/cms/src/main/java/com/codegym/cms/config/ApplicationConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bài 7/cms/src/main/java/com/codegym/cms/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Bài 7/cms/src/main/java/com/codegym/cms/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bài 7/cms/src/main/java/com/codegym/cms/controller/ProvinceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Bài 7/cms/src/main/java/com/codegym/cms/controller/ProvinceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bài 7/cms/src/main/java/com/codegym/cms/formatter/ProvinceFormatter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Bài 7/cms/src/main/java/com/codegym/cms/formatter/ProvinceFormatter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bài 7/cms/src/main/java/com/codegym/cms/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Bài 7/cms/src/main/java/com/codegym/cms/service/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bài 7/cms/src/main/java/com/codegym/cms/service/ICustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Bài 7/cms/src/main/java/com/codegym/cms/service/ICustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bài 7/cms/src/main/java/com/codegym/cms/service/IGeneralService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Bài 7/cms/src/main/java/com/codegym/cms/service/IGeneralService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Bài 8/user-validate/src/main/webapp/WEB-INF/views/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Bài 8/user-validate/src/main/webapp/WEB-INF/views/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2JGBSslRt3MuBekj3FrkCV6Tys4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/IDEAPAD GAMING 3/Module 4/Bài 6"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a1c9e04f-a9ec-4d43-a5c0-13c9872c7e04" name="Changes" comment="" />
+      <created>1671694542191</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1671694542191</updated>
+      <workItem from="1671694543435" duration="28000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

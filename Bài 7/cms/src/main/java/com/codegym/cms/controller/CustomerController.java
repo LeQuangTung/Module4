@@ -48,19 +48,26 @@ public class CustomerController {
     @GetMapping("/customers")
     public ModelAndView listCustomers(@RequestParam("search") Optional<String> search,@PageableDefault(value = 5) Pageable pageable){
         Page<Customer> customers;
-        if (search.isPresent()){
-            customers = customerService.findAllByFirstNameContaining(search.get(), pageable);
-        } else {
-            customers = customerService.findAll(pageable);
+        try {
+            if (search.isPresent()){
+                customers = customerService.findAllByFirstNameContaining(search.get(), pageable);
+            } else {
+                customers = customerService.findAll(pageable);
+            }
+            ModelAndView modelAndView = new ModelAndView("/customer/list");
+            modelAndView.addObject("customers", customers);
+            return modelAndView;
+        } catch (Exception e) {
+            return new ModelAndView("redirect:/customers");
         }
-        ModelAndView modelAndView = new ModelAndView("/customer/list");
-        modelAndView.addObject("customers", customers);
-        return modelAndView;
+
+
     }
 
     @GetMapping("/edit-customer/{id}")
-    public ModelAndView showEditForm(@PathVariable Long id) {
-        Optional<Customer> customer = customerService.findById(id);
+    public ModelAndView showEditForm(@PathVariable Long id) throws Exception {
+        Optional<Customer> customer = null;
+            customer = customerService.findById(id);
         if (customer != null) {
             ModelAndView modelAndView = new ModelAndView("/customer/edit");
             modelAndView.addObject("customer", customer);
@@ -73,7 +80,7 @@ public class CustomerController {
     }
 
     @GetMapping("/delete-customer/{id}")
-    public ModelAndView showDeleteForm(@PathVariable Long id) {
+    public ModelAndView showDeleteForm(@PathVariable Long id) throws Exception {
         Optional<Customer> customer = customerService.findById(id);
         if (customer.isPresent()) {
             ModelAndView modelAndView = new ModelAndView("/customer/delete");
